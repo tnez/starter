@@ -2,7 +2,19 @@
   "name": "@tnez/starter",
   "version": "1.0.0",
   "description": "A jumping off point for new projects",
-  "keywords": ["node", "template", "starter"],
+  "keywords": [
+    "node",
+    "template",
+    "starter"
+  ],
   "author": "Travis Nesland <tnesland@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "check:commits": "commitlint --from=master --to=HEAD",
+    "check:commits:ci": "commitlint --from=origin/master --to=${GITHUB_SHA}"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "8.3.5",
+    "@commitlint/config-conventional": "8.3.4"
+  }
 }

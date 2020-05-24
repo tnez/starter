@@ -1,0 +1,18 @@
+# osx
+.DS_Store
+
+# tags
+tags
+
+# todo file
+# (negate in project if needed): !todo*.*
+todo*.*
+
+# node stuff
+node_modules
+
+# build stuff
+**/.cache/
+**/build/
+**/dist/
+**/out/

@@ -1,0 +1,8 @@
+{
+  "name": "@tnez/starter",
+  "version": "1.0.0",
+  "description": "A jumping off point for new projects",
+  "keywords": ["node", "template", "starter"],
+  "author": "Travis Nesland <tnesland@gmail.com>",
+  "license": "MIT"
+}

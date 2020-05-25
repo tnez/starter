@@ -8,4 +8,4 @@ A repository to serve as a starting point for projects. It contains co-located c
 
 ## Getting started
 
-`npx degit https://github.com/tnez/starter`
+`npx degit https://github.com/tnez/starter some-new-project`

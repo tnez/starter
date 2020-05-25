@@ -1,0 +1,7 @@
+.cache/
+build/
+cypress/
+dist/
+node_modules/
+out/
+public/

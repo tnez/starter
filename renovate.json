@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "config:base",
+    "group:allNonMajor"
+  ],
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ],
+  "semanticCommits": true,
+  "stabilityDays": 3
+}

@@ -14,7 +14,8 @@
     "check:commits": "commitlint --from=master --to=HEAD",
     "check:commits:ci": "commitlint --from=origin/master --to=${GITHUB_SHA}",
     "check:lint": "eslint packages --ext=js,jsx,ts,tsx --no-error-on-unmatched-pattern",
-    "test:ci": "scripts/test.sh"
+    "check:types": "scripts/run-all.sh \"check:types\"",
+    "test:ci": "scripts/run-all.sh \"test:ci\""
   },
   "devDependencies": {
     "@commitlint/cli": "8.3.5",

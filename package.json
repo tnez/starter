@@ -10,6 +10,7 @@
   "author": "Travis Nesland <tnesland@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "bootstrap": "scripts/bootstrap.sh",
     "check:commits": "commitlint --from=master --to=HEAD",
     "check:commits:ci": "commitlint --from=origin/master --to=${GITHUB_SHA}",
     "check:lint": "eslint packages --ext=js,jsx,ts,tsx --no-error-on-unmatched-pattern"

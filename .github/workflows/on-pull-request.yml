@@ -1,0 +1,22 @@
+name: on-pull-request
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+    - name: deps:install
+      run: npm run bootstrap
+    - name: check:commits
+      run: npm run check:commits:ci
+    - name: check:lint
+      run: npm run check:lint
+    - name: check:types
+      run: npm run check:types
+    - name: test
+      run: npm run test:ci

@@ -1,0 +1,26 @@
+{
+  "name": "@tnez-starter/utils",
+  "version": "0.0.0",
+  "description": "A package of utilities that are shared across and scoped to this project.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "test": "jest",
+    "test:ci": "jest --ci",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "25.2.3",
+    "jest": "26.0.1",
+    "ts-jest": "26.1.0",
+    "typescript": "3.9.5"
+  }
+}

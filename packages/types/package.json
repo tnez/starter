@@ -1,0 +1,10 @@
+{
+  "name": "@tnez-starter/types",
+  "version": "0.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "types": "./index.d.ts",
+  "files": [
+    "index.d.ts"
+  ]
+}

@@ -11,8 +11,10 @@ do
   echo "Bootstrapping: ${package}"
   echo "==="
   cd "packages/${package}"
-  if [ -f package.json ]; then
+  if [ -f package-lock.json ]; then
     npm ci
+  else
+    echo "skipping (no package-lock.json found)"
   fi
   cd "../.."
   echo ""

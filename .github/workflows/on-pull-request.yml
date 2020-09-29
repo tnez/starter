@@ -6,14 +6,19 @@ on:
       - master
 
 jobs:
+  commitlint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: wagoid/commitlint-github-action@v2
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
     - name: deps:install
       run: npm run bootstrap
-    - name: check:commits
-      run: npm run check:commits:ci
     - name: check:lint
       run: npm run check:lint
     - name: check:types

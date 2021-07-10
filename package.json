@@ -23,7 +23,7 @@
     "@typescript-eslint/parser": "4.28.2",
     "eslint": "7.30.0",
     "eslint-config-prettier": "6.15.0",
-    "eslint-config-tnez": "1.2.1",
+    "eslint-config-tnez": "2.0.1",
     "eslint-plugin-jest": "24.3.6",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-prettier": "3.4.0",
